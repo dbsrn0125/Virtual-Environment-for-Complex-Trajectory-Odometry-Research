@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "com.frj.unity-sensors": {
+      "version": "https://github.com/Field-Robotics-Japan/UnitySensors.git?path=/Packages/UnitySensors",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.burst": "1.6.6"
+      },
+      "hash": "c30b45ccdec8cc588afc81b474b5545e8743d882"
+    },
+    "com.frj.unity-sensors-ros": {
+      "version": "https://github.com/Field-Robotics-Japan/UnitySensors.git?path=/Packages/UnitySensorsROS",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.frj.unity-sensors": "3.0.0",
+        "com.unity.robotics.ros-tcp-connector": "0.7.0-preview"
+      },
+      "hash": "c30b45ccdec8cc588afc81b474b5545e8743d882"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.10",
       "depth": 0,
@@ -11,7 +30,7 @@
     },
     "com.unity.burst": {
       "version": "1.8.28",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
@@ -125,6 +144,13 @@
       "dependencies": {
         "com.unity.render-pipelines.core": "17.0.3"
       }
+    },
+    "com.unity.robotics.ros-tcp-connector": {
+      "version": "https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c27f00c6cf750d2d0564349b3039d19aa3925e7c"
     },
     "com.unity.searcher": {
       "version": "4.9.4",
